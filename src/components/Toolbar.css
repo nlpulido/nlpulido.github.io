@@ -1,0 +1,61 @@
+.Toolbar {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #282a36;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.title {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font: 2.5vmin Inconsolata, monospace;
+  max-width: 100%;
+  padding: 15px;
+  color:#50fa7b;
+}
+
+.title h3 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.toolbar_icon {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector-bar {
+    height:2vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0%;
+    border-width:0;
+    background-color: gray;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blink {
+    animation: blink infinite 1.5s linear;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
