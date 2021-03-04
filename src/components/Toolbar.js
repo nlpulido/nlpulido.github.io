@@ -1,6 +1,9 @@
 import React from 'react';
 import { IconButton } from '@material-ui/core'
 import { withRouter } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faGithubSquare, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import './Toolbar.css';
 
@@ -12,16 +15,16 @@ function Toolbar(props) {
             <h3>{">"} neil pulido<span class="blink">_</span></h3>
             <div className="socials">
               <IconButton href="https://www.github.com/nlpulido/">
-                {/* <GitHubIcon fontSize="large" className="toolbar_icon"></GitHubIcon> */}
+                <FontAwesomeIcon icon={faGithubSquare} style={{ color: 'white' }}/>
               </IconButton>
               <IconButton href="https://www.linkedin.com/in/nlpulido/">
-                {/* <LinkedInIcon fontSize="large" className="toolbar_icon"></LinkedInIcon> */}
+                <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }}/>
               </IconButton>
               <IconButton href="https://www.instagram.com/neilisnext/">
-                {/* <InstagramIcon fontSize="large" className="toolbar_icon"></InstagramIcon> */}
+                <FontAwesomeIcon icon={faInstagram} style={{ color: 'white' }}/>
               </IconButton>
               <IconButton href="mailto:neilpphoto@gmail.com">
-                {/* <MailOutlineIcon fontSize="large" className="toolbar_icon"></MailOutlineIcon> */}
+                <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white' }}/>
               </IconButton>
             </div>
         </div>
