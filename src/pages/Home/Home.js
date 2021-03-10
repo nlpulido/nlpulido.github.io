@@ -44,17 +44,17 @@ export default class Home extends Component {
                         <h1 className="section-text">Recent Projects</h1>
                         <ul>
                             <li>
+                                Oasis Mobile: The mobile implementation of the <a href="https://oasistab.com/" className="keyword">Oasis Wellness</a> new tab application built with
+                                <span className="keyword"> React Native</span>, <span className="keyword"> Expo</span>, and utilizing <span className="keyword"> Google Firebase</span> for iOS and Android.
+                            </li>
+                            <li>
                                 Shadow Thief: An automated "Add-To-Cart" application which utilizes <span className="keyword">Selenium</span> and
                                 <span className="keyword"> Python</span> to crawl Shopify sites and checkout products for the user with a priority on speed.
                             </li>
                             <li>
-                                Katchup: A Google Chrome extension built with <span className="keyword">Javascript</span> with aim to provide a tomato timer
-                                useful for studying.
-                            </li>
-                            <li>
                                 Java Search Engine: A classic implementation of a search engine built with <span className="keyword">Java</span>.
                                 I utilized <span className="keyword">Apache</span> to debug the program when implementing worker threads. I also
-                                utilized <span classname="keyword">Bulma</span> for a front end and <span className="keyword">Jetty</span> to provide Servlets to launch it on a local host.
+                                utilized <span className="keyword">Bulma</span> for a front end and <span className="keyword">Jetty</span> to provide Servlets to launch it on a local host.
                             </li>
                         </ul>
                     </div>
