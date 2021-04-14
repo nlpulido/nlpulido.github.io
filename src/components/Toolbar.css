@@ -1,48 +1,38 @@
 .Toolbar {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   min-height: 10vh;
   width: 100vw;
   max-width: 100%;
-  background-color: #282a36;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.164);
+  /* box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.164); */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font: 25px Inconsolata, monospace;
+  color: black;
+  background-color: white;
 }
 
 .title {
   display: flex;
-  flex-flow: column;
-  align-items: center;
-  font: 2.5vmin Inconsolata, monospace;
-  max-width: 100%;
-  padding: 15px;
-  color:#50fa7b;
-}
-
-.title h3 {
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-.toolbar_icon {
-  color: white;
-}
-
-.socials {
-  display: flex;
-  flex-flow: row;
+  width: 300px;
   justify-content: center;
-  align-items: center;
+  /* background-color: red; */
 }
 
-.selector-bar {
-    height:2vh;
-    width: 100vw;
-    max-width: 100%;
-    margin: 0%;
-    border-width:0;
-    background-color: gray;
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  /* background-color: red; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
