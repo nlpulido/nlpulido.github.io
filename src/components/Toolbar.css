@@ -16,7 +16,6 @@
   width: 90%;
   padding-top: 25px;
   padding-bottom: 25px;
-  font: 25px Inconsolata, monospace;
   color: black;
   background-color: white;
 }
@@ -28,11 +27,26 @@
   /* background-color: red; */
 }
 
-.menu {
+.mobileMenu {
+  margin-right: 45px;
+}
+
+.desktopMenu {
   display: flex;
   justify-content: space-evenly;
   width: 500px;
-  /* background-color: red; */
+}
+
+.link {
+  font: 25px Inconsolata, monospace;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
