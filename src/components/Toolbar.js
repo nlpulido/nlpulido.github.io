@@ -3,8 +3,8 @@ import { withRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { IconButton } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
-
 import './Toolbar.css';
+
 const links = [
   {
     title: "about",

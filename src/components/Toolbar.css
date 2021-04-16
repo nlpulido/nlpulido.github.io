@@ -23,7 +23,6 @@
   display: flex;
   width: 300px;
   justify-content: center;
-  /* background-color: red; */
 }
 
 .mobileMenuIcon {
@@ -39,8 +38,8 @@
 }
 
 .mobileLink {
-  font: 25px Inconsolata, monospace;
-  font-weight: bold;
+  font: 25px 'Fira Sans', sans-serif;
+  font-weight: 500;
   background-color: white;
   border: none;
   border-bottom: 2px solid black;
@@ -59,8 +58,8 @@
 }
 
 .desktopLink {
-  font: 25px Inconsolata, monospace;
-  font-weight: bold;
+  font: 25px 'Fira Sans', sans-serif;
+  font-weight: 500;
   border: none;
   background-color: white;
 }

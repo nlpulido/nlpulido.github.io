@@ -1,65 +1,6 @@
-.home {
-    color: white;
+.portraitContainer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-}
-
-.intro {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 100vw;
-    min-height: 30vh;
-}
-
-.intro img {
-    max-height: 25vh;
-}
-
-.text-box {
-    max-width: 40vw;
-    margin: 25px;
-    text-align: left;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 2vmin;
-}
-
-.title-text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 7vmin;
-    color:#bd93f9;
-}
-
-.about-me {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-}
-
-.about-me li {
-    margin-top: 10px;
-}
-
-.about-me-column {
-    max-width: 40vw;
-}
-
-.about-me-column ul {
-    max-width: 30vw;  
-}
-
-.section-text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 5vmin;
-    color:#bd93f9;
-}
-
-.keyword {
-    color: #ff79c6;
 }
