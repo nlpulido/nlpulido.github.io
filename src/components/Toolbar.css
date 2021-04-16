@@ -1,6 +1,6 @@
 .Toolbar {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   min-height: 10vh;

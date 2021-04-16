@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
@@ -11,8 +11,10 @@ import { faGithub, faLinkedinIn, faInstagram, faYoutube } from '@fortawesome/fre
 
 import './Toolbar.css';
 
-function Toolbar({ isMobile, orientation }) {
+function Toolbar() {
   const useMobileMenu = useMediaQuery({ query: '(max-width: 768px)' });
+  const [menuVisible, setMenuVisible] = useState(true); // TODO: Change this to false
+  const toggleMenu = () => setMenuVisible(!menuVisible);
 
   return (
     <div className="Toolbar">
@@ -23,7 +25,7 @@ function Toolbar({ isMobile, orientation }) {
 
             {useMobileMenu ? (
               <div className="mobileMenu">
-                <IconButton>
+                <IconButton onClick={toggleMenu}>
                   <MenuIcon fontSize="medium" style={{ color: 'black' }} />
                 </IconButton>
               </div>
@@ -34,7 +36,17 @@ function Toolbar({ isMobile, orientation }) {
                 <button className="link" title="contact" onClick={() => alert("going to contact!")}>contact</button>
               </div>
             )}
+
         </div>
+
+        {menuVisible ? (
+          <div>
+            <p>Menu Goes Here</p>
+          </div>
+        ) : (
+          <></>
+        )}
+        
     </div>
   );
 }
