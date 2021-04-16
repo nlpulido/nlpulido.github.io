@@ -5,15 +5,19 @@ import headshot from './headshot_bubble.png'
 import "./Home.css";
 
 function Home() {
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
 
     return (
         <div>
-            {isPortrait ? (
+            {isTabletOrMobile ? (
                 <div className="portraitContainer">
-                    {isTabletOrMobile ? (<p>You are sized like a tablet or mobile phone</p>) : (<p>You are sized like desktop</p>)}
-                    <p>You are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
+                    <div className="eyeCatcherMobile">
+                        <h1>Hi there!</h1>
+                        <h1>My name is Neil.</h1>
+                        <h2>I'm a front end developer based in the Bay Area.</h2>
+                        <h2>Let's make something great.</h2>
+                    </div>
                 </div>
             ) : (
                 <></>

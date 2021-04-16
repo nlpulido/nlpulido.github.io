@@ -4,3 +4,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.eyeCatcherMobile {
+    font-size: 10vw;
+    align-items: center;
+    line-height: 15px;
+}
+
+h1 {
+    font-size: 9vw;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4vw;
+    font-weight: 400;
+}

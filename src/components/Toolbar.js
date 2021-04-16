@@ -31,7 +31,8 @@ function Toolbar() {
             <div className="title">
               <button 
                 className="desktopLink"
-                title="about" onClick={() => alert("going to home!")}
+                title="about" 
+                onClick={() => alert("going to home!")}
               >
                 {">"} neil pulido<span class="blink">_</span>
               </button>
