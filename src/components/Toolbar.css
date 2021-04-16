@@ -6,7 +6,6 @@
   min-height: 10vh;
   width: 100vw;
   max-width: 100%;
-  /* box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.164); */
 }
 
 .header {
@@ -27,8 +26,30 @@
   /* background-color: red; */
 }
 
-.mobileMenu {
+.mobileMenuIcon {
   margin-right: 45px;
+}
+
+.mobileMenu {
+  border-top: 2px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobileLink {
+  font: 25px Inconsolata, monospace;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.mobileLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .desktopMenu {
@@ -37,14 +58,14 @@
   width: 500px;
 }
 
-.link {
+.desktopLink {
   font: 25px Inconsolata, monospace;
   font-weight: bold;
   border: none;
   background-color: white;
 }
 
-.link:hover {
+.desktopLink:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -52,6 +73,16 @@
 @media (prefers-reduced-motion: no-preference) {
   .blink {
     animation: blink infinite 1.5s linear;
+    -webkit-animation: blink infinite 1.5s linear;
+  }
+}
+
+@-webkit-keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
