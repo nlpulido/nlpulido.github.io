@@ -3,20 +3,47 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    background-color: red;
 }
 
-.eyeCatcherMobile {
-    font-size: 10vw;
+.eyeCatcherPortrait {
     align-items: center;
     line-height: 15px;
 }
 
-h1 {
+.eyeCatcherPortrait h1 {
     font-size: 9vw;
     font-weight: 500;
 }
 
-h2 {
+.eyeCatcherPortrait h2 {
     font-size: 4vw;
     font-weight: 400;
+}
+
+.landscapeContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.eyeCatcherLandscape {
+    align-items: center;
+    line-height: 10px;  
+}
+
+.eyeCatcherLandscape h1 {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.eyeCatcherLandscape h2 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+img {
+    max-height: 400px;
 }
