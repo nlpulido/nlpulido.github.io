@@ -2,7 +2,7 @@ import React from "react";
 
 import './App.css';
 import Toolbar from './components/Toolbar'
-import Home from './pages/Home/Home'
+import Routes from "./Routes";
 import Footer from './components/Footer'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Toolbar />
-      <Home />
+      <Routes />
       {/* <Footer /> */}
     </div>
   );

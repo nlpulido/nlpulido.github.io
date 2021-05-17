@@ -7,8 +7,8 @@ import "./Home.css";
 
 function Home() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
-    const traits = ["software engineer", "photographer", "music lover", "gamer"];
+    // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+    // const traits = ["software engineer", "photographer", "music lover", "gamer"];
 
     return (
         <div>

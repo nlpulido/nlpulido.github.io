@@ -1,8 +1,29 @@
 import React from "react";
 import headshot from './headshot_bubble.png';
+import OutlinedCard from '../../components/OutlinedCard';
 import "./Home.css";
 
 function DesktopHome() {
+    const projects = [
+        {
+            title: "Oasis Mobile", 
+            description: "blah"
+        },
+        {
+            title: "DPS Lost & Found", 
+            description: "blah"
+        },
+        {
+            title: "Shadow Thief", 
+            description: "blah"
+        },
+        {
+            title: "iPARQ Permit Validator", 
+            description: "blah"
+        },
+    ]
+
+
     return (
         <div className="landscapeContainer">
             <div className="eyeCatcherLandscape">
@@ -19,10 +40,13 @@ function DesktopHome() {
                     <h3>Latest Projects</h3>
                 </header>
                 <ul className="carousel">
-                    <li><h4>Project 1</h4></li>
-                    <li><h4>Project 2</h4></li>
-                    <li><h4>Project 3</h4></li>
-                    <li><h4>Project 4</h4></li>
+                    {projects.map((project) => {
+                        return (
+                            <li>
+                                <OutlinedCard title={project.title} description={project.description}/>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </div>
