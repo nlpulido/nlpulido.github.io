@@ -8,17 +8,9 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
+    fontSize: 15,
+    backgroundColor: '#3f4f4c',
+    color: "#f2f2f2",
   },
 });
 

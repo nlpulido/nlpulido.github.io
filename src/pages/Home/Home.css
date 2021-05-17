@@ -19,7 +19,6 @@
 .eyeCatcherPortrait h2 {
     font-size: 4vw;
     font-weight: 400;
-    line-height: 10px;
 }
 
 .landscapeContainer {
@@ -57,7 +56,10 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #a9ba9d;
+    /* background-color: #3f4f4c; */
+    background-color: #a9c4c0;
+    /* color: #a9c4c0; */
+    color: #3f4f4c;
 }
 
 .projects header {
@@ -76,6 +78,5 @@ img {
 }
 
 .carousel li {
-    background-color: gray;
     margin: 5px;
 }
