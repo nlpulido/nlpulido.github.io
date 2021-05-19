@@ -3,23 +3,30 @@ import headshot from './headshot_bubble.png';
 import OutlinedCard from '../../components/OutlinedCard';
 import "./Home.css";
 
+/* Icons for each project */
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+
 function DesktopHome() {
     const projects = [
         {
-            title: "Oasis Mobile", 
-            description: "blah"
+            title: "Oasis Mobile for iOS",
+            language: "React Native + Expo", 
+            description: "an iOS implementation of Oasis New Tab",
         },
         {
-            title: "DPS Lost & Found", 
-            description: "blah"
+            title: "DPS Lost & Found",
+            language: "React.JS", 
+            description: "a React.JS Web App for USF's Public Safety",
         },
         {
-            title: "Shadow Thief", 
-            description: "blah"
+            title: "Shadow Thief",
+            language: "Python + Selenium", 
+            description: "blah",
         },
         {
-            title: "iPARQ Permit Validator", 
-            description: "blah"
+            title: "iPARQ Permit Validator",
+            language: "Python + Selenium", 
+            description: "blah",
         },
     ]
 
@@ -43,7 +50,7 @@ function DesktopHome() {
                     {projects.map((project) => {
                         return (
                             <li>
-                                <OutlinedCard title={project.title} description={project.description}/>
+                                <OutlinedCard project={project}/>
                             </li>
                         );
                     })}
