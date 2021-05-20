@@ -1,12 +1,11 @@
 import React from "react";
-import { Container, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import headshot from './headshot_bubble.png';
 import OutlinedCard from '../../components/OutlinedCard';
 import "./Home.css";
 
 /* Icons for each project */
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 
 function DesktopHome() {
     const projects = [

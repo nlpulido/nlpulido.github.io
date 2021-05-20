@@ -5,8 +5,6 @@ import Routes from "./Routes";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from "@material-ui/core/CssBaseline";
 
-const font = "'Fira Sans', sans-serif";
-
 const theme = createMuiTheme({
   palette: {
     type: "light",
