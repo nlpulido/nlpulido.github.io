@@ -29,13 +29,13 @@ export default function OutlinedCard(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
       <CardContent>
         <h1>{props.project.title}</h1>
         <h3 className={classes.language}>{props.project.language}</h3>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small" color="primary">Learn More</Button>
       </CardActions>
     </Card>
   );
