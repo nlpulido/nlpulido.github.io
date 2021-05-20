@@ -57,8 +57,8 @@ function DesktopHome() {
             </div>
             <Box component="div" className="projects" bgcolor="primary.light">
                 <header>
-                    <Typography variant="h2" color="secondary">
-                        <Box fontWeight="bold">
+                    <Typography variant="h3" color="secondary">
+                        <Box fontWeight="500">
                             Latest Projects
                         </Box>
                     </Typography>

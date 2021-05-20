@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
-import { IconButton } from '@material-ui/core'
+import { Box, IconButton, Typography } from '@material-ui/core'
+import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Toolbar.css';
 
@@ -27,16 +28,18 @@ function Toolbar() {
 
   return (
     <div className="Toolbar">
-        <div className="header">
-            <div className="title">
+        <Box component="div" className="header">
+            <Box component="div" className="title">
               <button 
                 className="desktopLink"
-                title="about" 
+                title="Home"
                 onClick={() => alert("going to home!")}
               >
-                {">"} neil pulido<span class="blink">_</span>
+                <Typography variant="h4">
+                  <Box fontWeight="bold">{">"} neil pulido<span class="blink">_</span></Box>
+                </Typography>
               </button>
-            </div>
+            </Box>
 
             {useMobileMenu ? (
               <div className="mobileMenuIcon">
@@ -52,12 +55,16 @@ function Toolbar() {
                     key={index}
                     onClick={() => alert(link.alert)}
                   >
-                    {link.title}
+                    <Typography variant="h4">
+                      <Box fontWeight="bold">
+                        {link.title}
+                      </Box>
+                    </Typography>
                   </button>
                 )}
               </div>
             )}
-        </div>
+        </Box>
 
         {menuVisible && useMobileMenu ? (
           <div className="mobileMenu">
