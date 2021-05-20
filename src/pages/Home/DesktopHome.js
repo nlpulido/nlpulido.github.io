@@ -1,4 +1,5 @@
 import React from "react";
+import { Typography } from '@material-ui/core';
 import headshot from './headshot_bubble.png';
 import OutlinedCard from '../../components/OutlinedCard';
 import "./Home.css";
@@ -35,10 +36,10 @@ function DesktopHome() {
         <div className="landscapeContainer">
             <div className="eyeCatcherLandscape">
                 <div className="eyeCatcherTextLandscape">
-                    <h1>Hi there!</h1>
-                    <h1>My name is Neil.</h1>
-                    <h2>I'm a software engineer based in the Bay Area.</h2>
-                    <h2>Let's make something great.</h2>
+                    <Typography variant="h1" gutterBottom>Hi there!</Typography>
+                    <Typography variant="h1" gutterBottom>My name is Neil.</Typography>
+                    <Typography variant="h2" gutterBottom>I'm a software engineer based in the Bay Area.</Typography>
+                    <Typography variant="h2" gutterBottom>Let's make something great.</Typography>
                 </div>
                 <img src={headshot} alt="headshot"></img>
             </div>

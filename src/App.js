@@ -1,18 +1,44 @@
 import React from "react";
-
 import './App.css';
 import Toolbar from './components/Toolbar'
 import Routes from "./Routes";
-import Footer from './components/Footer'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+const font = "'Fira Sans', sans-serif";
+
+const theme = createMuiTheme({
+  palette: {
+    type: "light",
+    background: {
+      default: "#ffffff"
+    },
+    primary: {
+      main: "#a9c4c0",
+      contrastText: "#3f4f4c"
+    },
+    secondary: {
+      main: "#3f4f4c",
+      contrastText: "#ffffff"
+    }
+  },
+  typography: {
+    fontFamily: [
+      'Fira Sans',
+      'sans-serif'
+    ].join(','),
+  }
+});
+
 
 function App() {
 
   return (
-    <div className="App">
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline />
       <Toolbar />
       <Routes />
-      {/* <Footer /> */}
-    </div>
+    </MuiThemeProvider>
   );
 }
 
