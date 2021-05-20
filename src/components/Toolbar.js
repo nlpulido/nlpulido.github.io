@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { Box, IconButton, Typography } from '@material-ui/core'
 import history from "../History";
@@ -9,11 +9,11 @@ import './Toolbar.css';
 const links = [
   {
     title: "about",
-    route: "about/"
+    route: "/about"
   },
   {
     title: "contact",
-    route: "contact/"
+    route: "/contact"
   }
 ]
 
