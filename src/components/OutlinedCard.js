@@ -1,11 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import { 
+  Card, 
+  CardActions, 
+  CardContent,
+  Button,
+  Modal 
+} from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: 275,
     fontSize: 15,
@@ -23,20 +26,33 @@ const useStyles = makeStyles({
     flexDirection: "column",
     justifyContent: "flex-start",
   },
-});
+}));
 
 export default function OutlinedCard(props) {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  function handleModalClick() {
+    setOpen(!open);
+  };
 
   return (
-    <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
-      <CardContent>
-        <h1>{props.project.title}</h1>
-        <h3 className={classes.language}>{props.project.language}</h3>
-      </CardContent>
-      <CardActions>
-        <Button size="small" color="primary">Learn More</Button>
-      </CardActions>
-    </Card>
+    <div>
+      <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
+        <CardContent>
+          <h1>{props.project.title}</h1>
+          <h3 className={classes.language}>{props.project.language}</h3>
+        </CardContent>
+        <CardActions>
+          <Button size="small" color="primary" onClick={() => handleModalClick()}>Learn More</Button>
+        </CardActions>
+      </Card>
+
+      <Modal
+        open={open}
+      >
+        <p>{props.project.description}</p>
+      </Modal>
+    </div>
   );
 }
