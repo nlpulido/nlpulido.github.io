@@ -41,13 +41,14 @@
 .eyeCatcherTextLandscape h1 {
     font-size: 90px;
     font-weight: 500;
-    line-height: 45px;  
+    line-height: 73px;
+    margin-bottom: 15px;
 }
 
 .eyeCatcherTextLandscape h2 {
     font-size: 30px;
     font-weight: 400;
-    line-height: 20px;  
+    line-height: 32px;  
 }
 
 .projects {
@@ -56,12 +57,11 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #a9c4c0;
-    color: #3f4f4c;
+    /* background-color: #a9c4c0; */
 }
 
 .projects header {
-    font-size: 60px;
+    padding: 50px;
 }
 
 img {

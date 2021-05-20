@@ -1,5 +1,6 @@
 import React from "react";
-import { Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 import headshot from './headshot_bubble.png';
 import OutlinedCard from '../../components/OutlinedCard';
 import "./Home.css";
@@ -36,16 +37,32 @@ function DesktopHome() {
         <div className="landscapeContainer">
             <div className="eyeCatcherLandscape">
                 <div className="eyeCatcherTextLandscape">
-                    <Typography variant="h1" gutterBottom>Hi there!</Typography>
-                    <Typography variant="h1" gutterBottom>My name is Neil.</Typography>
-                    <Typography variant="h2" gutterBottom>I'm a software engineer based in the Bay Area.</Typography>
-                    <Typography variant="h2" gutterBottom>Let's make something great.</Typography>
+                    <Typography variant="h1">
+                        <Box>
+                            Hi there!
+                        </Box>
+                        <Box>
+                            My name is Neil.
+                        </Box>
+                    </Typography>
+                    <Typography variant="h2">
+                        <Box>
+                            I'm a software engineer based in the Bay Area.
+                        </Box>
+                        <Box>
+                            Let's make something great.
+                        </Box>
+                    </Typography>
                 </div>
                 <img src={headshot} alt="headshot"></img>
             </div>
-            <div className="projects">
+            <Box component="div" className="projects" bgcolor="primary.light">
                 <header>
-                    <h3>Latest Projects</h3>
+                    <Typography variant="h2" color="secondary">
+                        <Box fontWeight="bold">
+                            Latest Projects
+                        </Box>
+                    </Typography>
                 </header>
                 <ul className="carousel">
                     {projects.map((project) => {
@@ -56,7 +73,7 @@ function DesktopHome() {
                         );
                     })}
                 </ul>
-            </div>
+            </Box>
         </div>
     );
 }
