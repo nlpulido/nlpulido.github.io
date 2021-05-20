@@ -2,22 +2,18 @@ import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { Box, IconButton, Typography } from '@material-ui/core'
-import Button from '@material-ui/core/Button';
+import history from "../History";
 import MenuIcon from '@material-ui/icons/Menu';
 import './Toolbar.css';
 
 const links = [
   {
     title: "about",
-    alert: "going to about!"
-  },
-  {
-    title: "social",
-    alert: "going to social!"
+    route: "about/"
   },
   {
     title: "contact",
-    alert: "going to contact!"
+    route: "contact/"
   }
 ]
 
@@ -33,7 +29,7 @@ function Toolbar() {
               <button 
                 className="desktopLink"
                 title="Home"
-                onClick={() => alert("going to home!")}
+                onClick={() => history.push("/")}
               >
                 <Typography variant="h4">
                   <Box fontWeight="bold">{">"} neil pulido<span class="blink">_</span></Box>
@@ -53,7 +49,7 @@ function Toolbar() {
                   <button 
                     className="desktopLink"
                     key={index}
-                    onClick={() => alert(link.alert)}
+                    onClick={() => history.push(link.route)}
                   >
                     <Typography variant="h4">
                       <Box fontWeight="bold">
