@@ -1,0 +1,10 @@
+
+.carousel {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;   
+}
+
+.carousel li {
+    margin: 5px;
+}

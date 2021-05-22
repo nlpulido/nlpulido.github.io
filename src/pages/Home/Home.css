@@ -68,13 +68,3 @@ img {
     margin-top: 10px;
     max-height: 400px;
 }
-
-.carousel {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;   
-}
-
-.carousel li {
-    margin: 5px;
-}

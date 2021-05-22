@@ -1,16 +1,16 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   Button, 
   Card, 
   CardActions, 
-  CardContent,
+  CardContent
 } from '@material-ui/core';
+import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 275,
+    width: 300,
     fontSize: 15,
     backgroundColor: '#3f4f4c',
     color: "#f2f2f2",
@@ -37,8 +37,15 @@ export default function OutlinedCard(props) {
       <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
         <CardContent>
           <h1>{props.project.title}</h1>
+          <p>{props.project.description}</p>
           <h3 className={classes.language}>{props.project.language}</h3>
         </CardContent>
+        {/* <CardMedia
+          component="img"
+          alt="project image"
+          height="175"
+          image={props.project.image}
+        /> */}
         <CardActions>
           <Button size="small" color="primary" onClick={() => alert(`Taking you to ${props.project.route}`)}>Learn More</Button>
         </CardActions>

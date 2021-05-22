@@ -7,40 +7,9 @@ import "./Home.css";
 // components
 import { Typography } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
-import OutlinedCard from '../../components/OutlinedCard';
+import ProjectCards from "./ProjectCards";
 
 function DesktopHome() {
-    const projects = [
-        {
-            title: "Oasis Mobile for iOS",
-            language: "React Native + Expo", 
-            description: "an iOS implementation of Oasis New Tab",
-            route: "/projects/oasis",
-            icon: "fa fa-plus-circle",
-        },
-        {
-            title: "DPS Lost & Found",
-            language: "React.JS", 
-            description: "a React.JS Web App for USF's Public Safety",
-            route: "/projects/lost-and-found",
-            icon: "fa fa-plus-circle",
-        },
-        {
-            title: "Shadow Thief",
-            language: "Python + Selenium", 
-            description: "An automated add to cart service built on Python for Shopify websites",
-            route: "/projects/shadow-thief",
-            icon: "fa fa-plus-circle",
-        },
-        {
-            title: "iPARQ Permit Validator",
-            language: "Python + Selenium", 
-            description: "An automated program used to validate 50+ permits for the University of San Francisco",
-            route: "/projects/permit-validator",
-            icon: "fa fa-plus-circle",
-        },
-    ];
-
 
     return (
         <div className="landscapeContainer">
@@ -54,7 +23,7 @@ function DesktopHome() {
                             My name is Neil.
                         </Box>
                     </Typography>
-                    <Typography variant="h2">
+                    <Typography variant="h2" gutterBottom>
                         <Box>
                             I'm a software engineer based in the Bay Area.
                         </Box>
@@ -73,15 +42,7 @@ function DesktopHome() {
                         </Box>
                     </Typography>
                 </header>
-                <ul className="carousel">
-                    {projects.map((project) => {
-                        return (
-                            <li>
-                                <OutlinedCard project={project}/>
-                            </li>
-                        );
-                    })}
-                </ul>
+                <ProjectCards />
             </Box>
         </div>
     );
