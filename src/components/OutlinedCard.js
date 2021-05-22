@@ -1,11 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { 
+import {
+  Button, 
   Card, 
   CardActions, 
   CardContent,
-  Button,
-  Modal 
+  Icon 
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,12 +29,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function OutlinedCard(props) {
+  // inline styling sheet
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-
-  function handleModalClick() {
-    setOpen(!open);
-  };
 
   return (
     <div>
@@ -44,15 +40,9 @@ export default function OutlinedCard(props) {
           <h3 className={classes.language}>{props.project.language}</h3>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary" onClick={() => handleModalClick()}>Learn More</Button>
+          <Button size="small" color="primary" onClick={() => alert(`Taking you to ${props.project.route}`)}>Learn More</Button>
         </CardActions>
       </Card>
-
-      <Modal
-        open={open}
-      >
-        <p>{props.project.description}</p>
-      </Modal>
     </div>
   );
 }

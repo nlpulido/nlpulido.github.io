@@ -1,11 +1,16 @@
 import React from "react";
-import { Typography } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
+
+// local file
 import headshot from './headshot_bubble.png';
-import OutlinedCard from '../../components/OutlinedCard';
 import "./Home.css";
 
+// components
+import { Typography } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
+import OutlinedCard from '../../components/OutlinedCard';
+
 /* Icons for each project */
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 
 function DesktopHome() {
     const projects = [
@@ -13,23 +18,31 @@ function DesktopHome() {
             title: "Oasis Mobile for iOS",
             language: "React Native + Expo", 
             description: "an iOS implementation of Oasis New Tab",
+            route: "/projects/oasis",
+            icon: AccessibilityNewIcon,
         },
         {
             title: "DPS Lost & Found",
             language: "React.JS", 
             description: "a React.JS Web App for USF's Public Safety",
+            route: "/projects/lost-and-found",
+            icon: AccessibilityNewIcon,
         },
         {
             title: "Shadow Thief",
             language: "Python + Selenium", 
-            description: "blah",
+            description: "An automated add to cart service built on Python for Shopify websites",
+            route: "/projects/shadow-thief",
+            icon: AccessibilityNewIcon,
         },
         {
             title: "iPARQ Permit Validator",
             language: "Python + Selenium", 
-            description: "blah",
+            description: "An automated program used to validate 50+ permits for the University of San Francisco",
+            route: "/projects/permit-validator",
+            icon: AccessibilityNewIcon,
         },
-    ]
+    ];
 
 
     return (
