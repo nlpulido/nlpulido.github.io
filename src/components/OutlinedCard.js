@@ -1,11 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   Button, 
   Card, 
   CardActions, 
   CardContent,
-  Icon 
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({

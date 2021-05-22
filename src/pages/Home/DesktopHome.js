@@ -9,9 +9,6 @@ import { Typography } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import OutlinedCard from '../../components/OutlinedCard';
 
-/* Icons for each project */
-import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
-
 function DesktopHome() {
     const projects = [
         {
@@ -19,28 +16,28 @@ function DesktopHome() {
             language: "React Native + Expo", 
             description: "an iOS implementation of Oasis New Tab",
             route: "/projects/oasis",
-            icon: AccessibilityNewIcon,
+            icon: "fa fa-plus-circle",
         },
         {
             title: "DPS Lost & Found",
             language: "React.JS", 
             description: "a React.JS Web App for USF's Public Safety",
             route: "/projects/lost-and-found",
-            icon: AccessibilityNewIcon,
+            icon: "fa fa-plus-circle",
         },
         {
             title: "Shadow Thief",
             language: "Python + Selenium", 
             description: "An automated add to cart service built on Python for Shopify websites",
             route: "/projects/shadow-thief",
-            icon: AccessibilityNewIcon,
+            icon: "fa fa-plus-circle",
         },
         {
             title: "iPARQ Permit Validator",
             language: "Python + Selenium", 
             description: "An automated program used to validate 50+ permits for the University of San Francisco",
             route: "/projects/permit-validator",
-            icon: AccessibilityNewIcon,
+            icon: "fa fa-plus-circle",
         },
     ];
 
