@@ -36,13 +36,26 @@ const projects = [
 export default function ProjectCards() {
     return (
         <ul className="carousel">
-            {projects.map((project) => {
+            {projects.map((project, index) => {
                 return (
-                    <li>
-                        <OutlinedCard project={project}/>
+                    <li className={"li-" + index}>
+                        <OutlinedCard project={project} />
                     </li>
                 );
             })}
+
+            {/* <li>
+                <OutlinedCard
+                    className="project-2"
+                    project={{
+                        title: "Oasis Mobile",
+                        language: "React Native + Expo", 
+                        description: "Wellness in the comfort of your pocket",
+                        route: "/projects/oasis",
+                        image: "https://i.imgur.com/K9uROaF.png",
+                    }}
+                />
+            </li> */}
         </ul>
     )
 };
