@@ -1,5 +1,7 @@
 import { React } from "react";
 import graduation_headshot from "./graduation_headshot.jpg";
+import keyboard_image from "./keyboard_image.jpg";
+import photography_image from "./photography_image.jpg";
 import { makeStyles } from '@material-ui/core/styles';
 import {
     Button, 
@@ -7,11 +9,13 @@ import {
     CardActions, 
     CardContent
 } from '@material-ui/core';
+import CardMedia from '@material-ui/core/CardMedia';
 import "./About.css";
 
 const useStyles = makeStyles((theme) => ({
     root: {
       width: 300,
+      marginTop: 10,
       fontSize: 15,
       backgroundColor: '#3f4f4c',
       color: "#f2f2f2",
@@ -24,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   
     cardHeader: {
       display: "flex",
-      flexDirection: "column",
+      flexDirection: "row",
       justifyContent: "flex-start",
     },
 }));
@@ -35,7 +39,7 @@ function About() {
     return(
         <div className="container">
             <div className="contents">
-                <img src={graduation_headshot} alt={"Neil's Graduation Headshot"}></img>
+                <img src={graduation_headshot} alt={"Neil's Graduation Headshot"} className="header_image"></img>
                 <div className="description">
                     <h4>Read About Me</h4>
                     <h1>About Me</h1>
@@ -51,14 +55,28 @@ function About() {
                             <CardContent>
                                 <h2>Mechanical Keyboards</h2>
                             </CardContent>
+                            <CardMedia
+                                component="img"
+                                alt="project image"
+                                height="175"
+                                image={keyboard_image}
+                            >
+                            </CardMedia>
                             <CardActions>
-                                <Button size="small" color="primary" onClick={() => alert(`Taking you to Photography`)}>Learn More</Button>
+                                <Button size="small" color="primary" onClick={() => alert(`Taking you to Keyboards`)}>Learn More</Button>
                             </CardActions>
                         </Card>
                         <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
                             <CardContent>
                                 <h2>Photography</h2>
                             </CardContent>
+                            <CardMedia
+                                component="img"
+                                alt="project image"
+                                height="175"
+                                image={photography_image}
+                            >
+                            </CardMedia>
                             <CardActions>
                                 <Button size="small" color="primary" onClick={() => alert(`Taking you to Photography`)}>Learn More</Button>
                             </CardActions>

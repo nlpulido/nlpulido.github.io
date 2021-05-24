@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.container img {
+.header_image {
     margin: 15px;
     max-height: 70vh;
     border-radius: 5px;
@@ -36,8 +36,8 @@
 }
 
 .description p {
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .highlight {
@@ -47,5 +47,7 @@
 .hot-links {
     width: 65vh;
     display: flex;
-    justify-content: space-around;
+    /* flex-flow: column wrap; */
+    align-items: flex-start;
+    justify-content: space-between;
 }
