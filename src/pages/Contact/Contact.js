@@ -1,7 +1,22 @@
-import { React } from "react";
+import { React, useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+    const [submissionComplete, setSubmissionComplete] = useState(false);
+    const [firstName, setFirstName] = useState("");
+    const [LastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+    
+    if (submissionComplete) {
+        return (
+            <div className="container">
+                <h1>Submission Complete!</h1>
+            </div>
+        )
+    }
+
     return(
         <div className="container">
             <div className="contact-container">
@@ -39,7 +54,7 @@ function Contact() {
                         <div className="message-form">
                             <input type="text" id="message" name="message"/>
                         </div>
-                        <button className="submit">SUBMIT</button>
+                        <button className="submit" onClick={() => setSubmissionComplete(true)}>SUBMIT</button>
                     </form>
                 </div>
             </div>
