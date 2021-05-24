@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import Toolbar from './components/Toolbar'
 import Routes from "./Routes";
+import Footer from "./components/Footer";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from "@material-ui/core/CssBaseline";
 
@@ -36,6 +37,7 @@ function App() {
       <CssBaseline />
       <Toolbar />
       <Routes />
+      <Footer />
     </MuiThemeProvider>
   );
 }

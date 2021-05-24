@@ -47,7 +47,7 @@
 .hot-links {
     width: 65vh;
     display: flex;
-    /* flex-flow: column wrap; */
+    flex-flow: column wrap;
     align-items: flex-start;
     justify-content: space-between;
 }

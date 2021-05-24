@@ -51,36 +51,8 @@ function About() {
                         below to get a better insight into my hobbies!
                     </p>
                     <div className="hot-links">
-                        <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
-                            <CardContent>
-                                <h2>Mechanical Keyboards</h2>
-                            </CardContent>
-                            <CardMedia
-                                component="img"
-                                alt="project image"
-                                height="175"
-                                image={keyboard_image}
-                            >
-                            </CardMedia>
-                            <CardActions>
-                                <Button size="small" color="primary" onClick={() => alert(`Taking you to Keyboards`)}>Learn More</Button>
-                            </CardActions>
-                        </Card>
-                        <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
-                            <CardContent>
-                                <h2>Photography</h2>
-                            </CardContent>
-                            <CardMedia
-                                component="img"
-                                alt="project image"
-                                height="175"
-                                image={photography_image}
-                            >
-                            </CardMedia>
-                            <CardActions>
-                                <Button size="small" color="primary" onClick={() => alert(`Taking you to Photography`)}>Learn More</Button>
-                            </CardActions>
-                        </Card>
+                        <h2>Mechanical Keyboards</h2>
+                        <h2>Photography</h2>
                     </div>
                 </div>
             </div>
