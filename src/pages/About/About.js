@@ -1,40 +1,9 @@
 import { React } from "react";
 import graduation_headshot from "./graduation_headshot.jpg";
-import keyboard_image from "./keyboard_image.jpg";
-import photography_image from "./photography_image.jpg";
-import { makeStyles } from '@material-ui/core/styles';
-import {
-    Button, 
-    Card, 
-    CardActions, 
-    CardContent
-} from '@material-ui/core';
-import CardMedia from '@material-ui/core/CardMedia';
+import history from "../../History";
 import "./About.css";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      width: 300,
-      marginTop: 10,
-      fontSize: 15,
-      backgroundColor: '#3f4f4c',
-      color: "#f2f2f2",
-      fontFamily: 'Fira Sans',
-    },
-  
-    language: {
-      fontStyle: "italic"
-    },
-  
-    cardHeader: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "flex-start",
-    },
-}));
-
 function About() {
-    const classes = useStyles();
 
     return(
         <div className="container">
@@ -51,8 +20,27 @@ function About() {
                         below to get a better insight into my hobbies!
                     </p>
                     <div className="hot-links">
-                        <h2>Mechanical Keyboards</h2>
-                        <h2>Photography</h2>
+                        <button 
+                            className="hobbyLink"
+                            title="Mechanical Keyboards"
+                            onClick={() => history.push("/keyboards")}
+                        >
+                            <h2>Mechanical Keyboards</h2>
+                        </button>
+                        <button 
+                            className="hobbyLink"
+                            title="Photography"
+                            onClick={() => history.push("/photography")}
+                        >
+                            <h2>Photography</h2>
+                        </button>
+                        <button 
+                            className="hobbyLink"
+                            title="Fashion"
+                            onClick={() => history.push("/fashion")}
+                        >
+                            <h2>Fashion</h2>
+                        </button>
                     </div>
                 </div>
             </div>

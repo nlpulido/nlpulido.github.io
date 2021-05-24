@@ -8,6 +8,10 @@ import './Toolbar.css';
 
 const links = [
   {
+    title: "home",
+    route: "/",
+  },
+  {
     title: "about",
     route: "/about"
   },
