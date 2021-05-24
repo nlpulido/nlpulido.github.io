@@ -1,8 +1,37 @@
 import { React } from "react";
 import graduation_headshot from "./graduation_headshot.jpg";
+import { makeStyles } from '@material-ui/core/styles';
+import {
+    Button, 
+    Card, 
+    CardActions, 
+    CardContent
+} from '@material-ui/core';
 import "./About.css";
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      width: 300,
+      fontSize: 15,
+      backgroundColor: '#3f4f4c',
+      color: "#f2f2f2",
+      fontFamily: 'Fira Sans',
+    },
+  
+    language: {
+      fontStyle: "italic"
+    },
+  
+    cardHeader: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+    },
+}));
+
 function About() {
+    const classes = useStyles();
+
     return(
         <div className="container">
             <div className="contents">
@@ -18,8 +47,22 @@ function About() {
                         below to get a better insight into my hobbies!
                     </p>
                     <div className="hot-links">
-                        <h3>Mechanical Keyboards</h3>
-                        <h3>Photography</h3>
+                        <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
+                            <CardContent>
+                                <h2>Mechanical Keyboards</h2>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small" color="primary" onClick={() => alert(`Taking you to Photography`)}>Learn More</Button>
+                            </CardActions>
+                        </Card>
+                        <Card className={classes.root} variant="outlined" backgroundColor="theme.palette.secondary">
+                            <CardContent>
+                                <h2>Photography</h2>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small" color="primary" onClick={() => alert(`Taking you to Photography`)}>Learn More</Button>
+                            </CardActions>
+                        </Card>
                     </div>
                 </div>
             </div>
