@@ -39,3 +39,12 @@
     font-size: 15px;
     line-height: 25px;
 }
+
+.highlight {
+    font-weight: bold;
+}
+
+.hot-links {
+    width: 65vh;
+
+}
