@@ -43,19 +43,6 @@ export default function ProjectCards() {
                     </li>
                 );
             })}
-
-            {/* <li>
-                <OutlinedCard
-                    className="project-2"
-                    project={{
-                        title: "Oasis Mobile",
-                        language: "React Native + Expo", 
-                        description: "Wellness in the comfort of your pocket",
-                        route: "/projects/oasis",
-                        image: "https://i.imgur.com/K9uROaF.png",
-                    }}
-                />
-            </li> */}
         </ul>
     )
 };

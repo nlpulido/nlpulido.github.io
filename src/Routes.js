@@ -8,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import keyboards from "./pages/Keyboards/keyboards";
 import photography from "./pages/Photography/photography";
 import fashion from "./pages/Fashion/fashion";
+import Oasis from "./pages/Projects/Oasis";
 
 /* History */
 import history from "./History";
@@ -22,6 +23,7 @@ function Routes() {
                 <Route path="/keyboards" exact component={keyboards} />
                 <Route path="/photography" exact component={photography} />
                 <Route path="/fashion" exact component={fashion} />
+                <Route path="/projects/oasis" exact component={Oasis} />
             </Switch>
         </Router>
     );

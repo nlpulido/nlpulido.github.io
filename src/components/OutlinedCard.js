@@ -6,7 +6,7 @@ import {
   CardActions, 
   CardContent
 } from '@material-ui/core';
-import CardMedia from '@material-ui/core/CardMedia';
+import history from "../History";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,7 +47,7 @@ export default function OutlinedCard(props) {
           image={props.project.image}
         /> */}
         <CardActions>
-          <Button size="small" color="primary" onClick={() => alert(`Taking you to ${props.project.route}`)}>Learn More</Button>
+          <Button size="small" color="primary" onClick={() => history.push(props.project.route)}>Learn More</Button>
         </CardActions>
       </Card>
     </div>
