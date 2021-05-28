@@ -42,7 +42,7 @@ function About() {
                 </div>
             </div>
             <div className="contents">
-                <img src={photography_image} alt={"Neil's 35mm Film Image"} className="horizontal_image"></img>
+                <img src={photography_image} alt={"Neil's 35mm Film Photography"} className="horizontal_image"></img>
                 <div className="description">
                     <h4>Read About My Hobbies</h4>
                     <h1>Film Photography</h1>
