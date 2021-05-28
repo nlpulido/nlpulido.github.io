@@ -1,6 +1,7 @@
 import { React } from "react";
 import graduation_headshot from "./graduation_headshot.jpg";
 import keyboard_image from "./keyboard_image.jpg";
+import photography_image from "./photography_image.jpg";
 import "./About.css";
 
 function About() {
@@ -39,7 +40,18 @@ function About() {
                     <img src={keyboard_image} alt={"Neil's Keyboards"} className="horizontal_image"></img>
                     <h3>Kei SE (silver) & Keycult No. 2/65 (black)</h3>
                 </div>
-
+            </div>
+            <div className="contents">
+                <img src={photography_image} alt={"Neil's 35mm Film Image"} className="horizontal_image"></img>
+                <div className="description">
+                    <h4>Read About My Hobbies</h4>
+                    <h1>Film Photography</h1>
+                    <p>
+                        I've loved photography ever since my dad taught me how to take pictures back in 2011. Throughout high school and my early college
+                        career, I did freelance photography work for clients around the Bay Area. Recently I've been experimenting with 35mm Film Photography.
+                        I love to take pictures of family, friends, Conan, my dog, & nature. Here's a couple of my favorite photos taken on film.
+                    </p>
+                </div>
             </div>
         </div>
     )
