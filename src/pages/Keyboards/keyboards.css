@@ -1,0 +1,16 @@
+.keyboards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard-contents {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65vw;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: red;
+}

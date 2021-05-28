@@ -5,26 +5,24 @@
 }
 
 .header_image {
-    margin: 15px;
-    max-height: 70vh;
+    max-height: 60vmin;
+    margin-right: 5px;
     border-radius: 5px;
 }
 
 .contents {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: flex-start;
     align-items: center;
-    width: 65vw;
+    max-width: 1100px;
     margin-top: 25px;
     padding: 25px;
 }
 
 .description {
-    /* background-color: red; */
     padding: 25px;
-    height: 70vh;
-    width: 65vh;
+    max-width: 640px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
