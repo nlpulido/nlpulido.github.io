@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -18,6 +19,8 @@
     max-width: 1100px;
     margin-top: 25px;
     padding: 25px;
+    border-style: solid;
+    box-shadow: 7px 7px 2px 1px;
 }
 
 .description {
@@ -31,6 +34,7 @@
 
 .description h1 {
     font-size: 45px;
+    line-height: 50px;
 }
 
 .description p {
@@ -42,21 +46,6 @@
     font-weight: bold;
 }
 
-.hot-links {
-    width: 65vh;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.hobbyLink {
-    border: none;
-    background-color: transparent;
-    padding: 0px;
-}
-  
-.hobbyLink:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.description span {
+    text-decoration: line-through;
 }

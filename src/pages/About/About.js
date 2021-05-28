@@ -1,6 +1,6 @@
 import { React } from "react";
 import graduation_headshot from "./graduation_headshot.jpg";
-import history from "../../History";
+import keyboard_image from "./keyboard_image.jpg";
 import "./About.css";
 
 function About() {
@@ -16,33 +16,24 @@ function About() {
                         Hi there! My name's Neil & I just recently graduated from the University of San Francisco 
                         with a major in Computer Science. Front-end / Web Development 
                         is my forte but I always love to learn more about other areas. When I'm not coding, I'm usually
-                        taking pictures with my film camera or tinkering with mechanical keyboards. Feel free to visit the links
-                        below to get a better insight into my hobbies!
+                        taking pictures with my film camera or tinkering with mechanical keyboards. Feel free to read 
+                        through the sections below to get a better insight into my hobbies!
                     </p>
-                    <div className="hot-links">
-                        <button 
-                            className="hobbyLink"
-                            title="Mechanical Keyboards"
-                            onClick={() => history.push("/keyboards")}
-                        >
-                            <h2>Mechanical Keyboards</h2>
-                        </button>
-                        <button 
-                            className="hobbyLink"
-                            title="Photography"
-                            onClick={() => history.push("/photography")}
-                        >
-                            <h2>Photography</h2>
-                        </button>
-                        <button 
-                            className="hobbyLink"
-                            title="Fashion"
-                            onClick={() => history.push("/fashion")}
-                        >
-                            <h2>Fashion</h2>
-                        </button>
-                    </div>
                 </div>
+            </div>
+            <div className="contents">
+                <div className="description">
+                    <h4>Read About My Hobbies</h4>
+                    <h1>Mechanical Keyboards</h1>
+                    <p>
+                        Building & Collecting Mechanical Keyboards is my latest <span className="strikethrough">money-sink</span> hobby! 
+                        I picked it up at the start of our quarantine & I've been having tons of fun with it. There's so many different 
+                        reasons to customize a keyboard: sound, feel, or aesthetics. Different keyboards have special mounting methods which
+                        can ultimately change the feeling of typing on the keyboard. You also can't forget the Cherry MX style switches. Different
+                        materials on switches can cause an endless amount of combinations for sound & feel. Here are a couple of my favorite keyboards.
+                    </p>
+                </div>
+                <img src={keyboard_image} alt={"Neil's Keyboards"} className="horizontal_image"></img>
             </div>
         </div>
     )
