@@ -33,7 +33,11 @@ function About() {
                         materials on switches can cause an endless amount of combinations for sound & feel. Here are a couple of my favorite keyboards.
                     </p>
                 </div>
-                <img src={keyboard_image} alt={"Neil's Keyboards"} className="horizontal_image"></img>
+                <div>
+                    <img src={keyboard_image} alt={"Neil's Keyboards"} className="horizontal_image"></img>
+                    <h3>Kei SE (silver) & Keycult No. 2/65 (black)</h3>
+                </div>
+
             </div>
         </div>
     )
