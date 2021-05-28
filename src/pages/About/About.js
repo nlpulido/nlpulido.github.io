@@ -31,6 +31,8 @@ function About() {
                         reasons to customize a keyboard: sound, feel, or aesthetics. Different keyboards have special mounting methods which
                         can ultimately change the feeling of typing on the keyboard. You also can't forget the Cherry MX style switches. Different
                         materials on switches can cause an endless amount of combinations for sound & feel. Here are a couple of my favorite keyboards.
+
+                        P.S. I also do keyboard sound tests on <a href="https://www.youtube.com/c/NeilP">YouTube</a>!
                     </p>
                 </div>
                 <div>

@@ -54,3 +54,14 @@
 .description span {
     text-decoration: line-through;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
