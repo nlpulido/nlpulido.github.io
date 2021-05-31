@@ -8,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import Oasis from "./pages/Projects/Oasis";
 import ShadowThief from "./pages/Projects/ShadowThief";
 import LostAndFound from "./pages/Projects/LostAndFound";
+import PermitValidator from "./pages/Projects/PermitValidator";
 
 /* History */
 import history from "./History";
@@ -22,6 +23,7 @@ function Routes() {
                 <Route path="/projects/oasis" exact component={Oasis} />
                 <Route path="/projects/shadow-thief" exact component={ShadowThief} />
                 <Route path="/projects/lost-and-found" exact component={LostAndFound} />
+                <Route path="/projects/permit-validator" exact component={PermitValidator} />
             </Switch>
         </Router>
     );
