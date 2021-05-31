@@ -38,3 +38,7 @@
 .project-description span {
     font-weight: bold;
 }
+
+.project-description h3 {
+    font-weight: 500;
+}
