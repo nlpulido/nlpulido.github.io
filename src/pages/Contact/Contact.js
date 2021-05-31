@@ -36,7 +36,7 @@ function Contact() {
                 <div className="contact-description">
                     <p>
                         If you want to collaborate on a project, or just enjoy a cup 
-                        of coffee together you can always reach me through my socials & I will try to get back to you 
+                        of coffee together you can always reach me through my socials (preferably email) & I will try to get back to you 
                         as soon as possible! Have an amazing day!
                     </p>
                 </div>
