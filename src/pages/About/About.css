@@ -38,12 +38,12 @@
 }
 
 .description h1 {
-    font-size: 45px;
+    font-size: 5vmin;
     line-height: 50px;
 }
 
 .description p {
-    font-size: 16px;
+    font-size: 1.75vmin;
     line-height: 30px;
 }
 

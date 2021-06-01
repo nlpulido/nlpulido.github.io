@@ -10,7 +10,7 @@ import history from "../History";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 300,
+    width: 250,
     fontSize: 15,
     backgroundColor: '#3f4f4c',
     color: "#f2f2f2",
