@@ -26,12 +26,12 @@
 }
 
 .project-description h1 {
-    font-size: 45px;
+    font-size: 4vmin;
     line-height: 50px;
 }
 
 .project-description p {
-    font-size: 16px;
+    font-size: 1.75vmin;
     line-height: 30px;
 }
 
