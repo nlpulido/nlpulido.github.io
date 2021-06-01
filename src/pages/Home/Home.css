@@ -1,65 +1,70 @@
-.home {
-    color: white;
+.portraitContainer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-}
-
-.intro {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 100vw;
-    min-height: 30vh;
+    padding: 50px;
 }
 
-.intro img {
-    max-height: 25vh;
+.eyeCatcherPortrait {
+    align-items: center;
+    line-height: 15px;
 }
 
-.text-box {
-    max-width: 40vw;
-    margin: 25px;
-    text-align: left;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 2vmin;
+.eyeCatcherPortrait h1 {
+    font-size: 9vw;
+    font-weight: 500;
 }
 
-.title-text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 7vmin;
-    color:#bd93f9;
+.eyeCatcherPortrait h2 {
+    font-size: 4vw;
+    font-weight: 400;
 }
 
-.about-me {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
+.landscapeContainer {
+    flex-flow: column;
+}
+
+.eyeCatcherLandscape {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
 }
 
-.about-me li {
+.eyeCatcherTextLandscape {
+    align-items: center;
+}
+
+.eyeCatcherTextLandscape h1 {
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 73px;
+    margin-bottom: 15px;
+}
+
+.eyeCatcherTextLandscape h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;  
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* background-color: #a9c4c0; */
+}
+
+.projects header {
+    padding: 50px;
+}
+
+img {
     margin-top: 10px;
-}
-
-.about-me-column {
-    max-width: 40vw;
-}
-
-.about-me-column ul {
-    max-width: 30vw;  
-}
-
-.section-text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 5vmin;
-    color:#bd93f9;
-}
-
-.keyword {
-    color: #ff79c6;
+    max-height: 400px;
 }

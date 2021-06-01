@@ -1,36 +1,87 @@
-import React from 'react';
-import { IconButton } from '@material-ui/core'
+import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faGithub, faLinkedinIn, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
+import { useMediaQuery } from 'react-responsive';
+import { Box, IconButton, Typography } from '@material-ui/core'
+import history from "../History";
+import MenuIcon from '@material-ui/icons/Menu';
 import './Toolbar.css';
 
+const links = [
+  {
+    title: "home",
+    route: "/",
+  },
+  {
+    title: "about",
+    route: "/about"
+  },
+  {
+    title: "contact",
+    route: "/contact"
+  }
+]
 
-function Toolbar(props) {
+function Toolbar() {
+  const useMobileMenu = useMediaQuery({ query: '(max-width: 768px)' });
+  const [menuVisible, setMenuVisible] = useState(false);
+  const toggleMenu = () => setMenuVisible(!menuVisible);
+
   return (
     <div className="Toolbar">
-        <div className="title">
-            <h3>{">"} neil pulido<span class="blink">_</span></h3>
-            <div className="socials">
-              <IconButton href="https://www.github.com/nlpulido/">
-                <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }}/>
-              </IconButton>
-              <IconButton href="https://www.linkedin.com/in/nlpulido/">
-                <FontAwesomeIcon icon={faLinkedinIn} style={{ color: 'white' }}/>
-              </IconButton>
-              <IconButton href="https://www.youtube.com/channel/UCN22en-BT8nzxksa5us0BGw/">
-                <FontAwesomeIcon icon={faYoutube} style={{ color: 'white' }}/>
-              </IconButton>
-              <IconButton href="https://www.instagram.com/neilisnext/">
-                <FontAwesomeIcon icon={faInstagram} style={{ color: 'white' }}/>
-              </IconButton>
-              <IconButton href="mailto:neilpphoto@gmail.com">
-                <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white' }}/>
-              </IconButton>
-            </div>
-        </div>
+        <Box component="div" className="header">
+            <Box component="div" className="title">
+              <button 
+                className="desktopLink"
+                title="Home"
+                onClick={() => history.push("/")}
+              >
+                <Typography variant="h4">
+                  <Box fontWeight="bold">{">"} neil pulido<span class="blink">_</span></Box>
+                </Typography>
+              </button>
+            </Box>
+
+            {useMobileMenu ? (
+              <div className="mobileMenuIcon">
+                <IconButton onClick={toggleMenu}>
+                  <MenuIcon fontSize="medium" style={{ color: 'black' }} />
+                </IconButton>
+              </div>
+            ) : (
+              <div className="desktopMenu">
+                {links.map((link, index) => 
+                  <button 
+                    className="desktopLink"
+                    key={index}
+                    onClick={() => history.push(link.route)}
+                  >
+                    <Typography variant="h4">
+                      <Box fontWeight="bold">
+                        {link.title}
+                      </Box>
+                    </Typography>
+                  </button>
+                )}
+              </div>
+            )}
+        </Box>
+
+        {menuVisible && useMobileMenu ? (
+          <div className="mobileMenu">
+            {links.map((link, index) => 
+              <button 
+                className="mobileLink"
+                key={index}
+                onClick={() => alert(link.alert)}
+              >
+                {link.title}
+              </button>
+            )}
+          </div>
+        ) : (
+          <></>
+        )}
+        
     </div>
   );
 }

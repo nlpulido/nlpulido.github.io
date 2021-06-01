@@ -3,7 +3,8 @@
     font-weight: 300;
     color: #6272a4;
     text-align: center;
-    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
     bottom: 1px;
     font-size: 75%;
 }
