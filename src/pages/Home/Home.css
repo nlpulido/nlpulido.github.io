@@ -39,14 +39,14 @@
 }
 
 .eyeCatcherTextLandscape h1 {
-    font-size: 90px;
+    font-size: 8.75vmin;
     font-weight: 500;
     line-height: 73px;
     margin-bottom: 15px;
 }
 
 .eyeCatcherTextLandscape h2 {
-    font-size: 30px;
+    font-size: 3vmin;
     font-weight: 400;
     line-height: 32px;  
 }
@@ -66,5 +66,5 @@
 
 img {
     margin-top: 10px;
-    max-height: 400px;
+    max-height: 40vmin;
 }
