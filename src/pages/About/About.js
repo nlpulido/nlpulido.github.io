@@ -29,9 +29,8 @@ function About() {
                     <p>
                         Building & Collecting Mechanical Keyboards is my latest <span className="strikethrough">money-sink</span> hobby! 
                         I picked it up at the start of our quarantine & I've been having tons of fun with it. There's so many different 
-                        reasons to customize a keyboard: sound, feel, or aesthetics. Different keyboards have special mounting methods which
-                        can ultimately change the feeling of typing on the keyboard. You also can't forget the Cherry MX style switches. Different
-                        materials on switches can cause an endless amount of combinations for sound & feel. Here are a couple of my favorite keyboards.
+                        reasons to customize a keyboard: sound, feel, or aesthetics. Different materials and switches can cause an endless 
+                        amount of combinations for sound & feel. Here are a couple of my favorite keyboards.
 
                         P.S. I also do keyboard sound tests on <a href="https://www.youtube.com/c/NeilP">YouTube</a>!
                     </p>
