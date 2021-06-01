@@ -1,12 +1,12 @@
 import { React } from "react";
-import DesktopFiller from "./desktop_filler.png";
+import PythonLogo from "./python_logo.png";
 import "./Projects.css";
 
 function ShadowThief() {
     return (
         <div className="container">
             <div className="project-container">
-                <img src={DesktopFiller} alt={"Desktop Filler"} className="desktop_image"></img>
+                <img src={PythonLogo} alt={"Python Logo"} className="desktop_image"></img>
                 <div className="project-description">
                     <h4>Projects</h4>
                     <h1>Shadow Thief</h1>

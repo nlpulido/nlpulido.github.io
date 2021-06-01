@@ -1,12 +1,12 @@
 import { React } from "react";
-import DesktopFiller from "./desktop_filler.png";
+import WebApp from "./lost_and_found.png";
 import "./Projects.css";
 
 function LostAndFound() {
     return (
         <div className="container">
             <div className="project-container">
-            <img src={DesktopFiller} alt={"Desktop Filler"} className="desktop_image"></img>
+            <img src={WebApp} alt={"Lost & Found Screenshot"} className="desktop_image"></img>
                 <div className="project-description">
                     <h4>Projects</h4>
                     <h1>DPS Lost And Found</h1>

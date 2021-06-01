@@ -26,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "flex-start",
   },
+
+  link: {
+    color: "#a9c4c0"
+  }
 }));
 
 export default function OutlinedCard(props) {
@@ -39,6 +43,7 @@ export default function OutlinedCard(props) {
           <h1>{props.project.title}</h1>
           <p>{props.project.description}</p>
           <h3 className={classes.language}>{props.project.language}</h3>
+          {/* {props.project.github ? <h3><a href={props.project.github} className={classes.link}>Github Repo</a></h3> : <></>} */}
         </CardContent>
         {/* <CardMedia
           component="img"

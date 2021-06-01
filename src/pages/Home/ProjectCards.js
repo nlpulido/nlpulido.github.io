@@ -4,11 +4,12 @@ import OutlinedCard from '../../components/OutlinedCard';
 
 const projects = [
     {
-        title: "Shadow Thief",
+        title: "iPARQ Permit Validator",
         language: "Python + Selenium", 
-        description: "An automated add to cart service",
-        route: "/projects/shadow-thief",
-        image: "add_circle",
+        description: "Automated validation of parking permit creation",
+        route: "/projects/permit-validator",
+        image: "star",
+        github: "https://github.com/nlpulido/iparq-automation-testing"
     },
     {
         title: "Oasis Mobile",
@@ -23,13 +24,14 @@ const projects = [
         description: "A Web App for USF's Public Safety",
         route: "/projects/lost-and-found",
         image: "../../components/icons/github-mark-white.png",
+        github: "https://github.com/nlpulido/dps-lost-and-found"
     },
     {
-        title: "iPARQ Permit Validator",
+        title: "Shadow Thief",
         language: "Python + Selenium", 
-        description: "Automated validation of parking permit creation",
-        route: "/projects/permit-validator",
-        image: "star",
+        description: "An automated add to cart service",
+        route: "/projects/shadow-thief",
+        image: "add_circle",
     },
 ];
 
