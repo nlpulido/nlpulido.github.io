@@ -10,7 +10,7 @@ function PermitValidator() {
                 <div className="project-description">
                     <h4>Projects</h4>
                     <h1>iPARQ Permit Validator</h1>
-                    <a href="https://github.com/nlpulido/iparq-automation-testing">Github Repo</a>
+                    <a href="https://github.com/nlpulido/iparq-automation">Github Repo</a>
                     <p>
                         The iPARQ Permit Validator serves as an automated bot to validate permits recently created
                         on the backend of the iPARQ Admin website. While working at Public Safety, one area I found 
