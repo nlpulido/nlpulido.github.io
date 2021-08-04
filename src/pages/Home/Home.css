@@ -1,28 +1,30 @@
+.home-container {
+    flex-flow: column;
+}
+
 .portraitContainer {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
 }
 
 .eyeCatcherPortrait {
     align-items: center;
-    line-height: 15px;
+    line-height: 2vmin;
+    width: 100vw;
+    padding-left: 7vmin;
+    padding-right: 7vmin;
 }
 
 .eyeCatcherPortrait h1 {
-    font-size: 9vw;
+    font-size: 10vmin;
     font-weight: 500;
 }
 
 .eyeCatcherPortrait h2 {
-    font-size: 4vw;
+    font-size: 4vmin;
     font-weight: 400;
-}
-
-.landscapeContainer {
-    flex-flow: column;
 }
 
 .eyeCatcherLandscape {
@@ -57,14 +59,18 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    /* background-color: #a9c4c0; */
 }
 
 .projects header {
     padding: 50px;
 }
 
-img {
+.eyeCatcherLandscape img {
+    margin-top: 10px;
+    max-height: 40vmin;
+}
+
+.eyeCatcherPortrait img {
     margin-top: 10px;
     max-height: 40vmin;
 }

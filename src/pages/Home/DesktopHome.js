@@ -12,7 +12,7 @@ import ProjectCards from "./ProjectCards";
 function DesktopHome() {
 
     return (
-        <div className="landscapeContainer">
+        <div className="home-container">
             <div className="eyeCatcherLandscape">
                 <div className="eyeCatcherTextLandscape">
                     <Typography variant="h1">

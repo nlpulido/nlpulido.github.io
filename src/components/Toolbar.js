@@ -28,7 +28,27 @@ function Toolbar() {
 
   return (
     <div className="Toolbar">
-        <Box component="div" className="header">
+        {useMobileMenu ? (
+          <Box component="div" className="header">
+            <Box component="div" className="title">
+              <button 
+                className="desktopLink"
+                title="Home"
+                onClick={() => history.push("/")}
+              >
+                <Typography variant="h5">
+                  <Box fontWeight="bold">{">"} neil pulido<span class="blink">_</span></Box>
+                </Typography>
+              </button>
+            </Box>
+            <div className="mobileMenuIcon">
+              <IconButton onClick={toggleMenu}>
+                <MenuIcon fontSize="medium" style={{ color: 'black' }} />
+              </IconButton>
+            </div>
+          </Box>
+        ) : (
+          <Box component="div" className="header">
             <Box component="div" className="title">
               <button 
                 className="desktopLink"
@@ -40,31 +60,23 @@ function Toolbar() {
                 </Typography>
               </button>
             </Box>
-
-            {useMobileMenu ? (
-              <div className="mobileMenuIcon">
-                <IconButton onClick={toggleMenu}>
-                  <MenuIcon fontSize="medium" style={{ color: 'black' }} />
-                </IconButton>
-              </div>
-            ) : (
-              <div className="desktopMenu">
-                {links.map((link, index) => 
-                  <button 
-                    className="desktopLink"
-                    key={index}
-                    onClick={() => history.push(link.route)}
-                  >
-                    <Typography variant="h4">
-                      <Box fontWeight="bold">
-                        {link.title}
-                      </Box>
-                    </Typography>
-                  </button>
-                )}
-              </div>
-            )}
-        </Box>
+            <div className="desktopMenu">
+              {links.map((link, index) => 
+                <button 
+                  className="desktopLink"
+                  key={index}
+                  onClick={() => history.push(link.route)}
+                >
+                  <Typography variant="h4">
+                    <Box fontWeight="bold">
+                      {link.title}
+                    </Box>
+                  </Typography>
+                </button>
+              )}
+            </div>
+          </Box>
+        )}
 
         {menuVisible && useMobileMenu ? (
           <div className="mobileMenu">
@@ -72,7 +84,7 @@ function Toolbar() {
               <button 
                 className="mobileLink"
                 key={index}
-                onClick={() => alert(link.alert)}
+                onClick={() => history.push(link.route)}
               >
                 {link.title}
               </button>

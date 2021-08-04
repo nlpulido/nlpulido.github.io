@@ -6,13 +6,11 @@ import DesktopHome from "./DesktopHome";
 import "./Home.css";
 
 function Home() {
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
-    // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
-    // const traits = ["software engineer", "photographer", "music lover", "gamer"];
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
     return (
         <div>
-            {isTabletOrMobile ? (
+            {isMobile ? (
                 <MobileHome />
             ) : (
                 <DesktopHome />
