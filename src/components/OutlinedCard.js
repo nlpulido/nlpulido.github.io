@@ -11,7 +11,7 @@ export default function OutlinedCard(props) {
         <p>{props.project.description}</p>
         <h3>{props.project.language}</h3>
       </div>
-      <button>
+      <button onClick={() => history.push(props.project.route)}>
         <p>LEARN MORE</p>
       </button>
     </div>
