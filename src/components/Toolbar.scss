@@ -1,0 +1,102 @@
+/* Import the Fira Sans Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$font-stack: 'Fira Sans', sans-serif;
+$primary-color: #a9c4c0;
+$secondary-color: #3f4f4c;
+$background: #FFFFFF;
+
+.Toolbar {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.title {
+  display: flex;
+  width: 230px;
+  justify-content: center;
+}
+
+.buttonWithText {
+  border: none;
+  background-color: transparent;
+  font-family: $font-stack;
+  font-size: medium;
+}
+
+.buttonWithText:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.desktopMenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.mobileMenuIcon {
+  margin-right: 45px;
+}
+
+.mobileMenu {
+  border-top: 2px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mobileLink {
+  font: 25px 'Fira Sans', sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.mobileLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blink {
+    animation: blink infinite 1.5s linear;
+    -webkit-animation: blink infinite 1.5s linear;
+  }
+}
+
+@-webkit-keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

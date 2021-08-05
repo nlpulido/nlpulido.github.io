@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Box, IconButton, Typography } from '@material-ui/core'
 import history from "../History";
 import MenuIcon from '@material-ui/icons/Menu';
-import './Toolbar.css';
+import './Toolbar.scss';
 
 const links = [
   {
@@ -29,53 +29,45 @@ function Toolbar() {
   return (
     <div className="Toolbar">
         {useMobileMenu ? (
-          <Box component="div" className="header">
-            <Box component="div" className="title">
+          <div className="header">
+            <div className="title">
               <button 
-                className="desktopLink"
+                className="buttonWithText"
                 title="Home"
                 onClick={() => history.push("/")}
               >
-                <Typography variant="h5">
-                  <Box fontWeight="bold">{">"} neil pulido<span class="blink">_</span></Box>
-                </Typography>
+                <h1>{">"} neil pulido<span class="blink">_</span></h1>
               </button>
-            </Box>
+            </div>
             <div className="mobileMenuIcon">
               <IconButton onClick={toggleMenu}>
                 <MenuIcon fontSize="medium" style={{ color: 'black' }} />
               </IconButton>
             </div>
-          </Box>
+          </div>
         ) : (
-          <Box component="div" className="header">
-            <Box component="div" className="title">
+          <div className="header">
+            <div className="title">
               <button 
-                className="desktopLink"
+                className="buttonWithText"
                 title="Home"
                 onClick={() => history.push("/")}
               >
-                <Typography variant="h4">
-                  <Box fontWeight="bold">{">"} neil pulido<span class="blink">_</span></Box>
-                </Typography>
+                <h1>{">"} neil pulido<span class="blink">_</span></h1>
               </button>
-            </Box>
+            </div>
             <div className="desktopMenu">
               {links.map((link, index) => 
                 <button 
-                  className="desktopLink"
+                  className="buttonWithText"
                   key={index}
                   onClick={() => history.push(link.route)}
                 >
-                  <Typography variant="h4">
-                    <Box fontWeight="bold">
-                      {link.title}
-                    </Box>
-                  </Typography>
+                  <h1>{link.title}</h1>
                 </button>
               )}
             </div>
-          </Box>
+          </div>
         )}
 
         {menuVisible && useMobileMenu ? (
