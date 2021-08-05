@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 $font-stack: 'Fira Sans', sans-serif;
-$primary-color: #a9c4c0;
-$secondary-color: #3f4f4c;
-$background: #FFFFFF;
 
 .Toolbar {
   display: flex;
@@ -63,7 +60,8 @@ $background: #FFFFFF;
 }
 
 .mobileLink {
-  font: 25px 'Fira Sans', sans-serif;
+  font-size: 25px;
+  font-family: $font-stack;
   font-weight: 500;
   background-color: transparent;
   border: none;
