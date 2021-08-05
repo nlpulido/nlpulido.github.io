@@ -2,7 +2,7 @@ import { React } from "react";
 import graduation_headshot from "./graduation_headshot.jpg";
 import keyboard_image from "./keyboard_image.jpg";
 import photography_image from "./photography_image.jpg";
-import "./About.css";
+import "./About.scss";
 
 function About() {
 
@@ -48,7 +48,7 @@ function About() {
                     <p>
                         I've loved photography ever since my dad taught me how to take pictures back in 2011. Throughout high school and my early college
                         career, I did freelance photography work for clients around the Bay Area. Recently I've been experimenting with 35mm Film Photography.
-                        I love to take pictures of family, friends, Conan, my dog, & nature. Here's a couple of my favorite photos taken on film.
+                        I love to take pictures of family, friends, Conan (my dog) & nature.
                     </p>
                 </div>
             </div>

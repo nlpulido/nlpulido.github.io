@@ -28,31 +28,30 @@
 }
 
 .description {
-    /* background-color: blue; */
     padding: 5%;
     max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 10px;
-}
 
-.description h1 {
-    font-size: 5vmin;
-    line-height: 50px;
-}
+    h1 {
+        font-size: 5vmin;
+        line-height: 50px; 
+    }
 
-.description p {
-    font-size: 1.75vmin;
-    line-height: 30px;
+    p {
+        font-size: 1.75vmin;
+        line-height: 30px;
+    }
+
+    span {
+        text-decoration: line-through;
+    }
 }
 
 .highlight {
     font-weight: bold;
-}
-
-.description span {
-    text-decoration: line-through;
 }
 
 a {
