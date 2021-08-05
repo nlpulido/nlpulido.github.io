@@ -1,6 +1,6 @@
 import React from "react";
 import headshot from './headshot_bubble.png';
-import "./Home.css";
+import "./Home.scss";
 
 function MobileHome() {
     return (

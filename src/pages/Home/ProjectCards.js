@@ -1,5 +1,5 @@
 import { React } from "react";
-import "./ProjectCards.css";
+import "./ProjectCards.scss";
 import OutlinedCard from '../../components/OutlinedCard';
 
 const projects = [

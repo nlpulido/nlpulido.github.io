@@ -1,12 +1,11 @@
-
 .carousel {
     display: flex;
     flex-flow: row;
-    list-style: none;   
-}
+    list-style: none;
 
-.carousel li {
-    margin: 5px;
+    li {
+        margin: 5px;
+    }
 }
 
 .li-0 {

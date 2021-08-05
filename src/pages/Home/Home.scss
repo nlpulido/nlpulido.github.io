@@ -1,0 +1,55 @@
+/* Import the Fira Sans Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$font-stack: 'Fira Sans', sans-serif;
+$primary-color: #a9c4c0;
+$secondary-color: #3f4f4c;
+
+.home-container {
+    flex-flow: column;
+    font-family: $font-stack;
+}
+
+.intro-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+
+    img {
+        margin-top: 10px;
+        max-height: 40vmin;
+    }
+}
+
+.desktop-intro {
+    align-items: center;
+
+    h1 {
+        font-size: 8.75vmin;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 3vmin;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: $primary-color;
+
+    h1 {
+        color: $secondary-color;
+        font-size: 50px;
+    }
+}
