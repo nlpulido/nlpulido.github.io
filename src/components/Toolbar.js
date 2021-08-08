@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
-import { Box, IconButton, Typography } from '@material-ui/core'
+import { IconButton } from '@material-ui/core'
 import history from "../History";
 import MenuIcon from '@material-ui/icons/Menu';
 import './Toolbar.scss';
