@@ -25,7 +25,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "tar": "^6.1.6",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "ws": "^8.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",
