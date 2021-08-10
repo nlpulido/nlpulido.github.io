@@ -6,7 +6,7 @@ export default function OutlinedCard(props) {
 
   return (
     <div className="card-container">
-      <div>
+      <div className="card-main-text">
         <h1>{props.project.title}</h1>
         <p>{props.project.description}</p>
         <h3>{props.project.language}</h3>

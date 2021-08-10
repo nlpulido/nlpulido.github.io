@@ -19,3 +19,16 @@
 .li-3 {
     padding-top: 50px;
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+
+        li {
+            padding: 0;
+            margin: 5px;
+        }
+    }
+}

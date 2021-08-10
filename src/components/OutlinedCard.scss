@@ -16,13 +16,16 @@ $secondary-color: #3f4f4c;
     justify-content: space-between;
     align-items: flex-start;
 
-    h1 {
-        font-size: xx-large;
-        color: white;
-    }
-
-    h3 {
-        font-style: italic;
+    .card-main-text {
+        h1 {
+            font-size: xx-large;
+            color: white;
+        }
+    
+        h3 {
+            font-style: italic;
+            color: white;
+        }
     }
 
     button {
@@ -40,5 +43,13 @@ $secondary-color: #3f4f4c;
     button:hover {
         text-decoration: underline;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        box-sizing: border-box;
+        width: 95%;
+        margin: 0;
     }
 }
