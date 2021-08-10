@@ -1,6 +1,6 @@
 import { React } from "react";
 import iPhone from "./iphone_transparent.png";
-import "./Projects.css";
+import "./Projects.scss";
 
 function Oasis() {
     return (
