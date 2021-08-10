@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
 import headshot from './headshot_bubble.png';
 import ProjectCards from "./ProjectCards";
 import "./Home.scss";
