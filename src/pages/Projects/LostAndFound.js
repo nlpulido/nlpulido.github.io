@@ -5,8 +5,8 @@ import "./Projects.scss";
 function LostAndFound() {
     return (
         <div className="container">
-            <div className="project-container">
-            <img src={WebApp} alt={"Lost & Found Screenshot"} className="desktop_header_image"></img>
+            <div className="project-container horizontal">
+                <img src={WebApp} alt={"Lost & Found Screenshot"} className="desktop_header_image"></img>
                 <div className="project-description">
                     <h4>Projects</h4>
                     <h1>DPS Lost And Found</h1>

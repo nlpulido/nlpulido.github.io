@@ -1,6 +1,6 @@
 .project-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     max-width: 65vw;
@@ -10,7 +10,7 @@
     box-shadow: 7px 7px 2px 1px;
 
     .header_image {
-        height: 40vh;
+        height: 25vh;
     }
 
     .desktop_header_image {
@@ -26,12 +26,12 @@
     align-items: flex-start;
 
     h1 {
-        font-size: 4vmin;
+        font-size: 2rem;
         line-height: 50px;
     }
 
     p {
-        font-size: 1.75vmin;
+        font-size: 1rem;
         line-height: 30px;
     }
 
@@ -39,15 +39,25 @@
         font-weight: bold;
     }
 
-    h3 {
+    h4 {
         font-weight: 500;
     }
 }
 
+.horizontal {
+    flex-flow: row wrap;
+}
+
 @media (max-width: 768px) {
     .project-container {
+        flex-flow: row wrap;
+
         .desktop_header_image {
             height: 35vw;
         }
+    }
+
+    .project-description {
+        max-width: 100%;
     }
 }
