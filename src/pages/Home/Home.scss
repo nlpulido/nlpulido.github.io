@@ -62,11 +62,12 @@ $secondary-color: #3f4f4c;
 @media (max-width: 768px) {
     .intro-container {
         h1 {
-            font-size: 10vmin;
+            font-size: 3rem;
+            line-height: 15px;
         }
 
         h2 {
-            font-size: 3.5vmin;
+            font-size: 1.5rem;
         }
     }
 }
