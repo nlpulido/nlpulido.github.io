@@ -40,7 +40,7 @@ export default function ProjectCards() {
         <ul className="carousel">
             {projects.map((project, index) => {
                 return (
-                    <li className={"li-" + index}>
+                    <li className={"li-" + index} key={index}>
                         <OutlinedCard project={project} />
                     </li>
                 );

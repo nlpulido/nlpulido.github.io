@@ -36,12 +36,12 @@ function Toolbar() {
                 title="Home"
                 onClick={() => history.push("/")}
               >
-                <h1>{">"} neil pulido<span class="blink">_</span></h1>
+                <h1>{">"} neil pulido<span className="blink">_</span></h1>
               </button>
             </div>
             <div className="mobileMenuIcon">
               <IconButton onClick={toggleMenu}>
-                <MenuIcon fontSize="medium" style={{ color: 'black' }} />
+                <MenuIcon fontSize="large" style={{ color: 'black' }} />
               </IconButton>
             </div>
           </div>

@@ -8,7 +8,7 @@ import './Footer.css';
 export default class Footer extends Component {
     render() {
         return (
-            <div class="footer">
+            <div className="footer">
               <IconButton href="https://www.github.com/nlpulido/">
                 <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }}/>
               </IconButton>
