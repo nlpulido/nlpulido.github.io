@@ -48,19 +48,13 @@ function Toolbar() {
         ) : (
           <div className="header">
             <div className="title">
-              <button 
-                className="buttonWithText"
-                title="Home"
-                onClick={() => history.push("/")}
-              >
-                <h1>{">"} neil pulido<span className="blink">_</span></h1>
-              </button>
+              <h1>{">"} neil pulido<span className="blink">_</span></h1>
             </div>
             <div className="desktopMenu">
-              {links.map((link, index) => 
+              {links.map((link) => 
                 <button 
                   className="buttonWithText"
-                  key={index}
+                  key={link.title}
                   onClick={() => history.push(link.route)}
                 >
                   <h1>{link.title}</h1>
