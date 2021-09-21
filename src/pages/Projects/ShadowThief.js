@@ -1,12 +1,12 @@
 import { React } from "react";
-import PythonLogo from "./python_logo.png";
+import PythonLogoWebP from "./python_logo.webp";
 import "./Projects.scss";
 
 function ShadowThief() {
     return (
         <div className="container">
             <div className="project-container">
-                <img src={PythonLogo} alt={"Python Logo"} className="header_image"></img>
+                <img src={PythonLogoWebP} alt={"Python Logo"} className="header_image"></img>
                 <div className="project-description">
                     <h4>Projects</h4>
                     <h1>Shadow Thief</h1>

@@ -1,5 +1,5 @@
 import { React } from "react";
-import WebApp from "./lost_and_found.png";
+import WebApp from "./lost_and_found.webp";
 import "./Projects.scss";
 
 function LostAndFound() {
