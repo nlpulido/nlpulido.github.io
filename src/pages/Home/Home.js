@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import headshot from './headshot_bubble.png';
+import headshot_webp from './headshot_bubble.webp';
 import ProjectCards from "./ProjectCards";
 import "./Home.scss";
 
@@ -14,7 +14,7 @@ function Home() {
                     <h2>I'm a software engineer based in the Bay Area.</h2>
                     <h2>Let's make something great.</h2>
                 </div>
-                <img src={headshot} alt="headshot" id="headshot"></img>
+                <img src={headshot_webp} alt="headshot" id="headshot"></img>
             </div>
             <div className="projects-container">
                 <h1>Latest Projects</h1>
