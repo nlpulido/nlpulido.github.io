@@ -1,7 +1,7 @@
 import { React } from "react";
-import graduation_headshot from "./graduation_headshot.jpg";
-import keyboard_image from "./keyboard_image.jpg";
-import photography_image from "./photography_image.jpg";
+import graduation_headshot_webp from "./graduation_headshot.webp";
+import keyboard_webp from "./keyboard_image.webp";
+import photography_webp from "./photography_image.webp";
 import "./About.scss";
 
 function About() {
@@ -9,7 +9,7 @@ function About() {
     return(
         <div className="container">
             <div className="contents">
-                <img src={graduation_headshot} alt={"Neil's Graduation Headshot"} className="header_image"></img>
+                <img src={graduation_headshot_webp} alt={"Neil's Graduation Headshot"} className="header_image"></img>
                 <div className="description">
                     <h4>Read About Me</h4>
                     <h1>About Me</h1>
@@ -36,12 +36,12 @@ function About() {
                     </p>
                 </div>
                 <div>
-                    <img src={keyboard_image} alt={"Neil's Keyboards"} className="horizontal_image"></img>
+                    <img src={keyboard_webp} alt={"Neil's Keyboards"} className="horizontal_image"></img>
                     <h3>Kei SE (silver) & Keycult No. 2/65 (black)</h3>
                 </div>
             </div>
             <div className="contents">
-                <img src={photography_image} alt={"Neil's 35mm Film Photography"} className="horizontal_image"></img>
+                <img src={photography_webp} alt={"Neil's 35mm Film Photography"} className="horizontal_image"></img>
                 <div className="description">
                     <h4>Read About My Hobbies</h4>
                     <h1>Film Photography</h1>
