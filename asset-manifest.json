@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0a75c1b6.chunk.css",
-    "main.js": "/static/js/main.37e8fb08.chunk.js",
-    "main.js.map": "/static/js/main.37e8fb08.chunk.js.map",
+    "main.js": "/static/js/main.449ec8ac.chunk.js",
+    "main.js.map": "/static/js/main.449ec8ac.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9d2852ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.9d2852ad.js.map",
     "static/js/2.f68989f7.chunk.js": "/static/js/2.f68989f7.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.0a75c1b6.chunk.css.map": "/static/css/main.0a75c1b6.chunk.css.map",
     "static/js/2.f68989f7.chunk.js.LICENSE.txt": "/static/js/2.f68989f7.chunk.js.LICENSE.txt",
     "static/media/graduation_headshot.d6c00609.jpg": "/static/media/graduation_headshot.d6c00609.jpg",
-    "static/media/headshot_bubble.2fa7f3a2.png": "/static/media/headshot_bubble.2fa7f3a2.png",
+    "static/media/headshot_bubble.d23f6f4e.webp": "/static/media/headshot_bubble.d23f6f4e.webp",
     "static/media/iphone_transparent.a0eca97b.png": "/static/media/iphone_transparent.a0eca97b.png",
     "static/media/keyboard_image.c140e2fc.jpg": "/static/media/keyboard_image.c140e2fc.jpg",
     "static/media/lost_and_found.0fc42c56.png": "/static/media/lost_and_found.0fc42c56.png",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.9d2852ad.js",
     "static/js/2.f68989f7.chunk.js",
     "static/css/main.0a75c1b6.chunk.css",
-    "static/js/main.37e8fb08.chunk.js"
+    "static/js/main.449ec8ac.chunk.js"
   ]
 }
